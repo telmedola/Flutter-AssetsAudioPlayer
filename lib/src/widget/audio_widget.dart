@@ -71,7 +71,7 @@ class AudioWidget extends StatefulWidget {
     this.initialPosition = const Duration(),
     this.onReadyToPlay,
     this.onFinished,
-  })  : audio = Audio.network(path),
+  })  : audio = Audio.file(path),
         super(key: key);
 
   @override
